@@ -12,6 +12,7 @@ const Footer = ({isDarkMode}) => {
             <Image src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} alt='' className='w-6' />
             mohamad971.ibrahim@gmail.com
         </div>
+        576 806 018
       </div>
       <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6'>
         <p>© 2025 Mohamad Ibrahim. All right reserved.</p>
