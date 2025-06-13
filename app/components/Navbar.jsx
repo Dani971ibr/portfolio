@@ -9,10 +9,10 @@ const navbar = ({isDarkMode, setIsDarkMode}) => {
      const sideMenuRef = useRef();
      
      const openMenu = () =>{
-        sideMenuRef.current.style.transform = 'translateX(-0rem)'
+        sideMenuRef.current.style.transform = 'translateX(0)'
      }
      const closeMenu = () =>{
-        sideMenuRef.current.style.transform = 'translateX(16rem)'
+                        sideMenuRef.current.style.transform = 'translateX(100%)'
      }
 
      useEffect(()=>{
@@ -52,7 +52,7 @@ const navbar = ({isDarkMode, setIsDarkMode}) => {
             </button>
 
             {/* {---------mobile-menu--------} */}
-            <ul ref={sideMenuRef} className='flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'>
+            <ul ref={sideMenuRef}  className='transform translate-x-full flex md:hidden flex-col gap-4 py-20 px-10 fixed right-0 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500 dark:bg-darkHover dark:text-white'>
                 <div className='absolute right-6 top-6' onClick={closeMenu}>
                     <Image src={ isDarkMode ? assets.close_white : assets.close_black} alt='' className='w-5' />
                 </div>
